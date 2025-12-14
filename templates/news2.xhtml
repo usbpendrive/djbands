@@ -1,0 +1,12 @@
+{% extends "base.xhtml" %}
+{% block title %}
+    {{ block.super }}: News
+{% endblock %}
+
+{% block content %}
+    <ul>
+    {% for item in news %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
